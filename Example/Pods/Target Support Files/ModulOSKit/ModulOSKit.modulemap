@@ -1,0 +1,6 @@
+framework module ModulOSKit {
+  umbrella header "ModulOSKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

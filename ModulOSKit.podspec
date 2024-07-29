@@ -1,42 +1,31 @@
-#
-# Be sure to run `pod lib lint ModulOSKit.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'ModulOSKit'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of ModulOSKit.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'ModulOSKit is a library containing ready-made components, modules and network operations.'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  ModulOSKit is a library containing ready-made components, modules and network operations. Building structures;
+
+      1-) Warning
+         Warnings appear at moments that indicate a situation. These can be 'successful, consequential and informative'.
+
+      2-) Network
+         HTTP operations are run by integrating the 'Alamofire' library for the connection through which Restful_API flights are transmitted. These are 'GET', 'POST', 'PUT' and 'DELETE' operations.
+
+      3-) Encryption and Decryption
+         It is important to encrypt data and hide sensitive data and it has been used as intended. For example, it can be used to hide the user's password.
+
+      4-) ViewComponent
+         There are some structures that are frequently used. It is formatted to receive external parameters.
                        DESC
 
   s.homepage         = 'https://github.com/OmerSarlavuk/ModulOSKit'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'OmerSarlavuk' => 'omersarlavuk6@gmail.com' }
   s.source           = { :git => 'https://github.com/OmerSarlavuk/ModulOSKit.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
-
   s.source_files = 'ModulOSKit/Classes/**/*'
+  s.dependency "Alamofire", "~> 5.9"
   
-  # s.resource_bundles = {
-  #   'ModulOSKit' => ['ModulOSKit/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
