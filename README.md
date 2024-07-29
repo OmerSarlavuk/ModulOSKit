@@ -156,7 +156,7 @@ $ pod install
 
 ## Author
 
-OmerSarlavuk, omersarlavuk6@gmail.com
+Ömer Şarlavuk, omersarlavuk6@gmail.com
 
 ## License
 
