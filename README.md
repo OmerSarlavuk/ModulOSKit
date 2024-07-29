@@ -15,10 +15,10 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 - Swift 5.0+
 
 
-##Communication
+## Communication
 
--If you have any general questions you would like to ask, you can contact me at -> omersarlavuk6@gmail.com.
--If there is anything you would like to improve, please submit a pull request.
+- If you have any general questions you would like to ask, you can contact me at -> omersarlavuk6@gmail.com.
+- If there is anything you would like to improve, please submit a pull request.
 
 ## Installation
 
