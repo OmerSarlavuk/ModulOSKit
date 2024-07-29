@@ -187,6 +187,7 @@
 		F92BF336077715C3E1D528181D1018CA /* Pods-ModulOSKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ModulOSKit_Tests.modulemap"; sourceTree = "<group>"; };
 		FA774B2D2E2994BBDB06FF31F974BA66 /* Pods-ModulOSKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ModulOSKit_Tests-dummy.m"; sourceTree = "<group>"; };
 		FB8367CC2C5763E000FA4311 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = ModulOSKit/Classes/NetworkManager.swift; sourceTree = "<group>"; };
+		FB8367EF2C5786F800FA4311 /* EncodedDataAlgorithms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EncodedDataAlgorithms.swift; path = ModulOSKit/Classes/EncodedDataAlgorithms.swift; sourceTree = "<group>"; };
 		FBDCA59B7DFDDE48FE1C2FA29E06BBDC /* Pods-ModulOSKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ModulOSKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		FC907C5C56594798E47B7ED0C4BA25E8 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -320,6 +321,7 @@
 				363B5985DD5A7029CC8B200F57D10AD2 /* Pod */,
 				5C6C52D8F67CE046AE9C82EB29BFD0D2 /* Support Files */,
 				FB8367CC2C5763E000FA4311 /* NetworkManager.swift */,
+				FB8367EF2C5786F800FA4311 /* EncodedDataAlgorithms.swift */,
 			);
 			name = ModulOSKit;
 			path = ../..;
