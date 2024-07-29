@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/OmerSarlavuk/ModulOSKit'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'OmerSarlavuk' => 'omersarlavuk6@gmail.com' }
-  s.source           = { :git => 'https://github.com/OmerSarlavuk/ModulOSKit.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/OmerSarlavuk/ModulOSKit.git', :tag => '0.1.0', :branch => '0.1.0' }
 
   s.ios.deployment_target = '10.0'
   s.source_files = 'ModulOSKit/Classes/**/*'
