@@ -49,6 +49,111 @@ $ pod install
 ```
 
 
+## Usage
+
+### NetworkManager
+
+```swift
+        
+        //MARK: fetchData
+        NetworkManager<ResponseModel>.fetchData(url: "api_url") { data, message in
+            
+            guard let result = data else { return }
+            
+            /*
+            
+            order process
+            
+            */
+        }
+        
+        
+        //MARK: postData, method -> .post
+        
+        //Parameters Ex.
+        /* SolarDataPostDto(cityName: "City", year: 2001, month: "Month", radiation: 5.91) */
+        
+        NetworkManager<ResponseModel>.jsonObjectFieldData(url: "api_url", method: .post, parameters: BodyParameters) { data, message in
+            
+            guard let result = data else { return }
+            
+            /*
+            
+            order process
+            
+            */
+            
+        }
+        
+        
+        //MARK: putData, method -> .put
+        
+        //Parameters Ex.
+        /* SolarPutDto(id: 986, cityName: "City", year: 2001, month: "Month", radiation: 5.91) */
+        
+        NetworkManager<ResponseModel>.jsonObjectFieldData(url: "api_url", method: .put, parameters: BodyParameters) { data, message in
+            
+            guard let result = data else { return }
+            
+            /*
+            
+            order process
+            
+            */
+
+            
+        }
+        
+        
+        //MARK: deleteData, is given directly from query
+        
+        //Usage Ex. -> "http://baseURL/URL?id=982" 
+        
+        NetworkManager<ResponseModel>.deleteData(url: "api_url") { response, message in
+            
+            guard let result = response else { return }
+            
+            /*
+            
+            order process
+            
+            */
+            
+        }
+        
+        //MARK: deleteData, is given directly from the body
+        
+        //Parameters Ex.
+        /* SolarDataDelete(id: 988) */
+        
+        NetworkManager<ResponseModel>.deleteData(url: "api_url", parameters: BodyParameters) { response, message in
+            
+            guard let result = response else { return }
+            
+            /*
+            
+            order process
+            
+            */
+            
+        }
+
+
+```
+
+### EncodedDataAlgorithms
+
+```swift
+
+        let text = "normal_text"
+        let key  = "encyrpt_key"
+        
+        let encyrpt = EncodedDataAlgorithms.encryptText(text: text, key: key)
+        let decyrpt = EncodedDataAlgorithms.decryptText(encryptedText: encyrpt, key: key)
+
+```
+
+
 ## Author
 
 OmerSarlavuk, omersarlavuk6@gmail.com
