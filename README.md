@@ -1,6 +1,5 @@
 # ModulOSKit
 
-[![CI Status](https://img.shields.io/travis/OmerSarlavuk/ModulOSKit.svg?style=flat)](https://travis-ci.org/OmerSarlavuk/ModulOSKit)
 [![Version](https://img.shields.io/cocoapods/v/ModulOSKit.svg?style=flat)](https://cocoapods.org/pods/ModulOSKit)
 [![License](https://img.shields.io/cocoapods/l/ModulOSKit.svg?style=flat)](https://cocoapods.org/pods/ModulOSKit)
 [![Platform](https://img.shields.io/cocoapods/p/ModulOSKit.svg?style=flat)](https://cocoapods.org/pods/ModulOSKit)
