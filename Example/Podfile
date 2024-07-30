@@ -7,8 +7,11 @@ target 'ModulOSKit_Example' do
 
   target 'ModulOSKit_Tests' do
     inherit! :search_paths
-
+    
+    
     pod 'Alamofire'
+    pod 'SnapKit'
+    pod 'Kingfisher'
     
   end
 end

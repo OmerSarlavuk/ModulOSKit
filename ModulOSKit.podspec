@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ModulOSKit'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'ModulOSKit is a library containing ready-made components, modules and network operations.'
 
   s.description      = <<-DESC
@@ -22,10 +22,12 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/OmerSarlavuk/ModulOSKit'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'OmerSarlavuk' => 'omersarlavuk6@gmail.com' }
-  s.source           = { :git => 'https://github.com/OmerSarlavuk/ModulOSKit.git', :tag => '0.1.2', :branch => 'master' }
+  s.source           = { :git => 'https://github.com/OmerSarlavuk/ModulOSKit.git', :tag => '0.1.3', :branch => 'master' }
 
   s.ios.deployment_target = '10.0'
   s.source_files = 'ModulOSKit/Classes/**/*'
   s.dependency "Alamofire", "~> 5.9"
+  s.dependency "SnapKit", "~> 5.0"
+  s.dependency "Kingfisher", "~> 6.3"
   
 end
