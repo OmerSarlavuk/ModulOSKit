@@ -1,4 +1,4 @@
-<img src="https://www.elephantstock.com/cdn/shop/collections/lion-wall-art.jpg?crop=center&height=1024&v=1649155312&width=1024" alt="" />
+<img width="500" alt="Lion" src="https://github.com/user-attachments/assets/f382cd39-4d82-462d-b8ee-2a532579f2f0">
 
 
 
