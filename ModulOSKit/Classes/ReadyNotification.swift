@@ -2,7 +2,7 @@
 //  ReadyNotification.swift
 //  Pods
 //
-//  Created by Ahlatci on 30.07.2024.
+//  Created by Ö.Ş on 30.07.2024.
 //
 
 
