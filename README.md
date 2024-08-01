@@ -113,9 +113,9 @@ $ pod install
         
         //Usage Ex. -> "http://baseURL/URL?id=982" 
         
-        NetworkManager<ResponseModel>.deleteData(url: "api_url") { response, message in
+        NetworkManager<ResponseModel>.deleteData(url: "api_url") { data, message in
             
-            guard let result = response else { return }
+            guard let result = data else { return }
             
             /*
             
@@ -130,9 +130,9 @@ $ pod install
         //Parameters Ex.
         /* SolarDataDelete(id: 988) */
         
-        NetworkManager<ResponseModel>.deleteData(url: "api_url", parameters: BodyParameters) { response, message in
+        NetworkManager<ResponseModel>.deleteData(url: "api_url", parameters: BodyParameters) { data, message in
             
-            guard let result = response else { return }
+            guard let result = data else { return }
             
             /*
             
