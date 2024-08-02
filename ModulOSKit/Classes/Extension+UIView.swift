@@ -40,12 +40,15 @@ public extension UIView {
         self.layer.cornerRadius = 5
         
         let view = object_sender.send_imageView()
-        view.contentMode = .scaleAspectFit
+        view.contentMode = .scaleAspectFill
+        view.layer.masksToBounds = true
+        view.layer.cornerRadius = 10
         let titleL = object_sender.send_label()
         titleL.textColor = .black
         titleL.font = .boldSystemFont(ofSize: 16)
         let identifierL = object_sender.send_label()
         identifierL.textColor = .black
+        identifierL.numberOfLines = 0
         identifierL.font = .systemFont(ofSize: 14)
         identifierL.textColor = .darkGray
         
@@ -54,11 +57,12 @@ public extension UIView {
         self.addSubview(titleL)
         self.addSubview(identifierL)
         
+        
         view.snp.makeConstraints{
             $0.top.equalToSuperview().offset(16)
             $0.bottom.equalToSuperview().offset(-16)
-            $0.leading.equalToSuperview().offset(16)
-            $0.width.equalTo(50)
+            $0.leading.equalToSuperview().offset(8)
+            $0.width.equalTo(view.snp.height)
         }
         titleL.snp.makeConstraints{
             $0.leading.equalTo(view.snp.trailing).offset(20)
@@ -66,7 +70,9 @@ public extension UIView {
         }
         identifierL.snp.makeConstraints{
             $0.leading.equalTo(titleL.snp.leading)
+            $0.top.equalTo(titleL.snp.bottom).offset(4)
             $0.bottom.equalTo(view.snp.bottom).offset(-4)
+            $0.trailing.equalToSuperview().offset(-16)
         }
         
         view.image = image
@@ -74,6 +80,7 @@ public extension UIView {
         identifierL.text = identifier
         
     }
+    
     
     
     func image_visualTitle_viewComponent(image: UIImage, effect: UIBlurEffect, title: String, font: UIFont, textColor: UIColor, textAligment: NSTextAlignment, handleTap: @escaping VoidCallback) {
