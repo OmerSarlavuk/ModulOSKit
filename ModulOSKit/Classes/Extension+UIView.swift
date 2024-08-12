@@ -213,10 +213,10 @@ public extension UIView {
     }
     
     
-    func topIcon_bottomTitleTapped_ViewComponent(icon: UIImage, title: String, font: UIFont? = nil, textColor: UIColor? = nil, textAligment: NSTextAlignment, handleTap: @escaping VoidCallback) {
+    func topIcon_bottomTitleTapped_ViewComponent(background: UIColor, icon: UIImage, title: String, font: UIFont? = nil, textColor: UIColor? = nil, textAligment: NSTextAlignment, handleTap: @escaping VoidCallback) {
         
         self.layer.cornerRadius = 10
-        self.backgroundColor = .white
+        self.backgroundColor = background
         
         let iconI = object_sender.send_imageView()
         let titleL = object_sender.send_label()
